@@ -27,9 +27,6 @@ namespace WpfApp2.ViewModels
         private void ShowPage2 () => CurrentView = _page2ViewModel;
 
         [RelayCommand]
-        public void IncrementCounter () {
-            Counter++;
-            OnPropertyChanged(nameof(Counter)); // ← 追加
-        }
+        public void IncrementCounter () => Counter++;
     }
 }
